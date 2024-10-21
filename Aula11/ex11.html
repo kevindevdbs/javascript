@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+    <h1>Teste do País IF e Else</h1>
+
+    Qual País voce é: <input type="text" id="txt">
+    <div id="res"></div>
+
+    <input type="button" value="Verificar" onclick="pais()">
+
+    <script>
+        function pais(){
+            var txt = window.document.getElementById('txt')
+            var res = window.document.getElementById('res')
+            var pais = txt.value
+
+            if (pais != 'brasil'){
+                res.innerHTML = 'Estrangeiro'
+            }
+            else {
+                res.innerHTML = 'Brasileiro'
+            }
+        }
+    </script>
+</body>
+</html>
