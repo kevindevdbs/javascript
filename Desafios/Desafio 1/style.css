@@ -30,3 +30,7 @@ footer a {
     color: white;
     text-decoration: none;
 }
+
+#msg{
+    padding: 10px;
+}
