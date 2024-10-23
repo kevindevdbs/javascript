@@ -7,15 +7,15 @@ function carregar() {
     msg.innerHTML = `Agora são ${hora} Horas.`;
 
     if (hora >= 0 && hora < 12) {
-        img.src = 'manhaedit.jpg';
+        img.src = './Imagens/manhaedit.jpg';
         document.body.style.backgroundColor = '#e2cd9f';
 
     } else if (hora >= 12 && hora <= 18) {
-        img.src = 'tardeedit.jpg';
+        img.src = './Imagens/tardeedit.jpg';
         document.body.style.backgroundColor = ('#b9846f')
 
     } else {
-        img.src = 'noiteedit.jpg';
+        img.src = './Imagens/noiteedit.jpg';
         document.body.style.backgroundColor = 'black';
     }
 }
