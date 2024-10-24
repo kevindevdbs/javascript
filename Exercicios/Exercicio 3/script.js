@@ -6,6 +6,4 @@ function contar() {
     if (inical.value.length == 0 || final.value.length == 0 || passos.value.length == 0) {
         window.alert('[ERRO] Verifique os dados e tente novamente!')
     }
-    
-    for
-}
+   
