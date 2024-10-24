@@ -1,0 +1,36 @@
+@charset "UTF-08";
+
+body {
+    background-color: gray;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+section {
+    background-color: white;
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 1px 1px 5px black;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+#msg{
+    padding: 10px;
+}
