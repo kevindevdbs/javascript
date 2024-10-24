@@ -19,12 +19,12 @@
 
             <label for="sexo">Sexo:</label>
             <label for="masculino">Masculino</label>
-            <input type="radio" id="masculino" name="masculino">
+            <input type="radio" id="masculino" name="radsex" required>
 
             <label for="feminino">Feminino</label>
-            <input type="radio" id="feminino" name="feminino"><br><br>
+            <input type="radio" id="feminino" name="radsex" required><br><br>
 
-            <input type="button" value="Verificar">
+            <input type="button" value="Verificar" onclick="verificar()">
 
             <div id="res">
                 <p>Preencha os dados acima para ver o resultado!</p>

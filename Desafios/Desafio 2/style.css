@@ -7,12 +7,16 @@ body {
 main{
     background-color: white;
     width: 500px;
-    height: 150px;
+    height: 450px;
     margin: auto;
     border-radius: 20px;
     box-shadow: 1px 1px 5px black;
     padding-top: 30px;
     padding-left: 20px;
+}
+
+div #res{
+    margin-top: 10px;
 }
 
 header h1{
