@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio Java Script</title>
+    <title>Contador</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,32 +12,15 @@
     <h1>Vamos Contar</h1>
 
     <section>
-        <div id="inicio">
-            <p>Inicio:
-                <input type="number" id="inicial">
-            </p>
-        </div>
-        
-        <div id="fim">
-            <p>Fim:
-                <input type="number" id="final">
-            </p>
-
-        </div>
-
-        <div id="passos">
-            <p>Passos:
-                <input type="number" id="passo">
-            </p>
-
+        <div>
+            <p>Inicio: <input type="number" id="txti"></p>
+            <p>Fim: <input type="number" id="txtf"></p>
+            <p>Passo: <input type="number" id="txtp"></p>
+            <p><input type="button" value="Contar" onclick="contar()"></p>
         </div>
 
         <div>
-            <button id="botao" onclick="contar()">Contar</button>
-        </div>
-
-        <div id="res">
-            Contando:
+            <p id="res"> Preparando Contagem ...</p>
         </div>
 
     </section>

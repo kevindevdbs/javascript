@@ -15,7 +15,6 @@ section {
     height: 300px;
     margin: auto;
     border-radius: 20px;
-    text-align: center;
     box-shadow: 1px 1px 5px black;
 }
 
@@ -31,6 +30,9 @@ footer a {
     text-decoration: none;
 }
 
-#msg{
+#numeros{
+    margin: 10px;
     padding: 10px;
 }
+
+

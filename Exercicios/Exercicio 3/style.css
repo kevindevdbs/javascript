@@ -12,7 +12,6 @@ h1 {
 section {
     background-color: white;
     width: 500px;
-    height: 400px;
     margin: auto;
     border-radius: 20px;
     box-shadow: 1px 1px 5px black;
@@ -30,28 +29,7 @@ footer a {
     text-decoration: none;
 }
 
-#inicio{
-    margin: 10px;
-    padding: 5px;
+div{
+    padding: 10px;
 }
 
-#fim{
-    margin: 10px;
-    padding: 5px;
-}
-
-#passos{
-    margin: 10px;
-    padding: 5px;
-}
-
-#botao{
-    margin: 10px;
-    padding: 5px;
-    
-}
-
-#res{
-    text-align: left;
-    padding: 20px;
-}
