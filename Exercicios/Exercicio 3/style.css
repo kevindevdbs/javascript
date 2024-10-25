@@ -1,35 +1,35 @@
-@charset "UTF-08";
+@charset "UTF-8";
 
 body {
-    background-color: gray;
+    background-color: #f0f0f0;
 }
 
 h1 {
     text-align: center;
-    color: white;
+    color: #333;
 }
 
 section {
-    background-color: white;
+    background-color: #fff;
     width: 500px;
     margin: auto;
     border-radius: 20px;
-    box-shadow: 1px 1px 5px black;
+    box-shadow: 1px 1px 5px #000;
 }
 
 footer {
     margin-top: 50px;
     text-align: center;
-    color: white;
+    color: #333;
     text-decoration: none;
 }
 
 footer a {
-    color: white;
+    color: #333;
     text-decoration: none;
 }
 
 div{
     padding: 10px;
+    box-sizing: border-box;
 }
-

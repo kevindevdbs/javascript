@@ -4,20 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio Java Script</title>
+    <title>Tabuada</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Titulo</h1>
+    <h1> Gerador de Tabuada</h1>
 
     <section>
-        <div id="numeros">
-            <p>Número : <input type="number" id="num" placeholder="Digite um número"> <button id="botao">Gerar Tabuada</button></p>
-        </div>
-
         <div>
-    
+            <p>Número : <input type="number" id="txtn" placeholder="Digite um número"> <button id="botao"onclick="tabuada()">Gerar Tabuada</button></p>
+        </div>
+        
+        <div>
+            <select name="tabuada" id="seltab" size="10">
+                <option>Digite um número acima</option>
+            </select>
         </div>
 
     </section>
