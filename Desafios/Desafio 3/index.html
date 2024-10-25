@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antes e Depois</title>
+    <style>
+        input {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Antes e Depois</h1>
+    <p><input type="button" value="Antecessor e Sucessor" onclick="antecessor()"></p>
+
+    <script>
+        function antecessor() {
+            let n = prompt('Digite um numero inteiro qualquer')
+
+            n = Number(n)
+
+            let ant = alert(`O antecessor de ${n} é ${n - 1}` + '\n' + `O sucessor de ${n} é ${n + 1}`)
+        }
+    </script>
+</body>
+
+</html>
