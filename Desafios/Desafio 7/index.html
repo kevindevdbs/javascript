@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #resultado {
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Conversor de Reais para Dólares</h1>
+    <button id="converterBtn">Converter</button>
+    <div id="resultado"></div>
+
+    <script>
+
+        // Função para converter R$ em US$
+        function converter() {
+
+            // Solicita a cotação do dólar
+            let cotacao = parseFloat(prompt("Informe a cotação do dólar (R$1 = US$?):"));
+            let reais = parseFloat(prompt("Quantos R$ você tem na carteira?"));
+
+            if (!isNaN(reais) && reais >= 0) {
+                let dolares = reais / cotacao;
+                document.getElementById("resultado").innerText = `Você pode comprar US$ ${dolares.toFixed(2)} com R$ ${reais.toFixed(2)}.`;
+            } else {
+                document.getElementById("resultado").innerText = "Por favor, insira um valor válido em R$.";
+            }
+        }
+
+        // Adiciona o evento de clique ao botão
+        document.getElementById("converterBtn").addEventListener("click", converter);
+    </script>
+</body>
+
+</html>

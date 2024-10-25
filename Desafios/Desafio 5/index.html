@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Medidas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #resultado {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            display: none; /* Inicialmente escondido */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Conversor de Medidas</h1>
+    <button id="converterBtn">Converter Distância</button>
+    <div id="resultado"></div>
+
+    <script>
+        document.getElementById('converterBtn').addEventListener('click', function() {
+        
+            let metros = prompt("Digite a distância em metros (m):");
+            metros = parseFloat(metros); // Converte a entrada para um número
+
+            if (!isNaN(metros)) {
+                let km = metros / 1000;
+                let hm = metros / 100;
+                let dam = metros / 10;
+                let dm = metros * 10;
+                let cm = metros * 100;
+                let mm = metros * 1000;
+
+                // Exibe o resultado
+                document.getElementById('resultado').innerHTML = `
+                    <p>Resultados:</p>
+                    <p>${metros} m = ${km.toFixed(2)} km</p>
+                    <p>${metros} m = ${hm.toFixed(2)} hm</p>
+                    <p>${metros} m = ${dam.toFixed(1)} dam</p>
+                    <p>${metros} m = ${dm.toFixed(1)} dm</p>
+                    <p>${metros} m = ${cm.toFixed(0)} cm</p>
+                    <p>${metros} m = ${mm.toFixed(0)} mm</p>
+                `;
+                document.getElementById('resultado').style.display = 'block'; // Mostra o resultado
+            } else {
+                alert("Por favor, digite um número válido.");
+            }
+        });
+    </script>
+
+</body>
+</html>
